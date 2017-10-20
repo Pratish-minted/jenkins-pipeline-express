@@ -6,7 +6,7 @@ const envOne = process.env.VARIABLE_1;
 const envTwo = process.env.VARIABLE_2;
 
 app.get("/", function(req, res) {
-  res.send("Hello World!");
+  res.send("Hello World! lol123");
 });
 
 app.get("/add", function(req, res) {
