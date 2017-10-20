@@ -69,7 +69,7 @@ node('staging') {
     stage('Run Application') {
         echo 'Stopping old process to run new process...'
         sh '''
-        npm run pm2-stop
+        npm run pm2-stop || true
         npm run pm2-start
         '''
     }
